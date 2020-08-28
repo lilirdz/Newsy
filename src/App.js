@@ -22,6 +22,10 @@ import Trending from "./pages/tabs/Trending.js";
 import Submit from "./pages/tabs/Submit.js";
 import Search from "./pages/tabs/Search.js";
 import Profile from "./pages/tabs/Profile.js";
+import EditProfile from "./pages/auth/EditProfile";
+import SignUp from "./pages/auth/SignUp";
+import Login from "./pages/auth/Login";
+import Forgot from "./pages/auth/Forgot";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -53,6 +57,11 @@ const App = () => (
             <Route path="/submit" component={Submit} />
             <Route path="/search" component={Search} />
             <Route path="/profile" component={Profile} />
+            <Route path="/edit-profile" component={EditProfile} />
+            <Route path="/register" component={SignUp} />
+            <Route path="/login" component={Login} />
+            <Route path="/forgot" component={Forgot} />
+
             <Route component={() => <Redirect to="/news" />} />
           </Route>
         </IonRouterOutlet>
